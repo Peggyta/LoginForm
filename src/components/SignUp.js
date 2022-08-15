@@ -56,7 +56,7 @@ const SignUp = () => {
                 <h2 className={styles.header}>SignUp</h2>
                 <div className={styles.formField}>
                     <label>Name</label>
-                    <input 
+                    <input className={(errors.name && touched.name) ? styles.uncomleted : styles.formInput}
                     type="text" 
                     name="name" 
                     value={data.name} 
