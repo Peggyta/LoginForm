@@ -66,7 +66,7 @@ const SignUp = () => {
                 </div>
                 <div className={styles.formField}>
                     <label>Email</label>
-                    <input 
+                    <input className={(errors.email && touched.email) ? styles.uncomleted : styles.formInput }
                     type="text" 
                     name="email" 
                     value={data.email} 
@@ -76,7 +76,7 @@ const SignUp = () => {
                 </div>
                 <div className={styles.formField}>
                     <label>Password</label>
-                    <input 
+                    <input className={(errors.password && touched.password) ? styles.uncomleted : styles.formInput}
                     type="password" 
                     name="password" 
                     value={data.password} 
@@ -86,7 +86,7 @@ const SignUp = () => {
                 </div>
                 <div className={styles.formField}>
                     <label>Confirm Password</label>
-                    <input 
+                    <input className={(errors.confirmPassword && touched.confirmPassword) ? styles.uncomleted : styles.formInput} 
                     type="password" 
                     name="confirmPassword" 
                     value={data.confirmPassword} 
