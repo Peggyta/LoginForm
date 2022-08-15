@@ -81,7 +81,12 @@
     transition: all.2s ease-in;
 }
 
-
+.formInput:focus, 
+.uncompleted:focus {
+    border:  1px solid #1a74e6;
+    outline: none;
+    line-height: 30px;
+}
 
 input[type="checkbox"] {
     height: 18px;
@@ -149,4 +154,20 @@ input[type="checkbox"]:focus {
     font-size: 0.85rem;
     height: 20px !important;
     text-align: center;
+}
+
+@media (max-width:440px) {
+    .formContainer {
+        width: 90%;
+        margin: 50px 20px;
+        padding: 20px;
+    }
+
+    .formInput {
+        width: 90%;
+    }
+
+    .uncompleted {
+        width: 90%;
+    }
 }
