@@ -16,7 +16,8 @@ export const validate = (data, type) => {
         delete errors.password
     }
 
-    if (type==="signup") {
+    if (type === "signup") {
+        
         if (!data.name.trim()) {
             errors.name = "Username is required"
         } else {
@@ -31,7 +32,7 @@ export const validate = (data, type) => {
             delete errors.confirmPassword
         }
 
-        if (data.isAccepted) {
+        if (data.acceptedTerms) {
             delete errors.isAccepted
         } else {
             errors.isAccepted = "Accept our regulations"

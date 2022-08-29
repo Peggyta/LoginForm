@@ -8,7 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import styles from "./SignUp.module.css";
 
 const SignUp = () => {
-    const[data, setData] = useState({
+
+    const [data, setData] = useState({
         name: "",
         email: "",
         password: "",
@@ -108,7 +109,7 @@ const SignUp = () => {
                         <label>I accept terms of privacy policy</label>
                         <input
                             type="checkbox"
-                            name="isAccepted"
+                            name="acceptedTerms"
                             value={data.isAccepted}
                             onChange={changeHandler}
                             onFocus={focusHandler} 
